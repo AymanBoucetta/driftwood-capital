@@ -33,4 +33,4 @@ uv run alembic upgrade head # appliquer les migrations
 
 ## Variables d'environnement
 
-Toutes dans `backend/.env` (jamais dans `.env.example`, jamais commité). Voir `app/config.py` pour la liste des variables requises.
+Toutes dans `backend/.env` (jamais dans `.env.example`, jamais commité). Voir `app/config.py` pour la liste des variables requises..
