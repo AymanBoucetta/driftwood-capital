@@ -1,8 +1,9 @@
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
-[project]
 
+[project]
+exclude-newer = "2026-09-22T00:00:00Z"
 name = "document-copilot-backend"
 version = "0.1.0"
 requires-python = ">=3.12"
@@ -21,7 +22,7 @@ dependencies = [
     "supabase==2.31.0",
     "uvicorn==0.53.0",
 ]
-exclude-newer = "2026-09-22T00:00:00Z"
+
 
 [tool.uv]
 add-bounds = "exact"

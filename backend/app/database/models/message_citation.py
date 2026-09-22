@@ -13,10 +13,10 @@ if TYPE_CHECKING:
 
 
 class MessageCitation(Base, TimestampMixin):
-    __tablename__ = "source_citations"
+    __tablename__ = "message_citations"
     __table_args__ = (
-        Index("ix_source_citations_message_id", "message_id"),
-        Index("ix_source_citations_chunk_id", "chunk_id"),
+        Index("ix_message_citations_message_id", "message_id"),
+        Index("ix_message_citations_chunk_id", "chunk_id"),
     )
 
     id: Mapped[uuid.UUID] = mapped_column(

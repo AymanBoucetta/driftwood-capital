@@ -18,7 +18,7 @@ class Settings(BaseSettings):
     openai_embedding_model: str = "text-embedding-3-small"
     openai_embedding_dimensions: int = 1536
 
-     # Comma-separated in .env; use `cors_origins` for the parsed list.
+    # Comma-separated in .env; use `cors_origins` for the parsed list.
     allowed_origins: str = "http://localhost:5173"
 
     @computed_field
@@ -29,6 +29,5 @@ class Settings(BaseSettings):
             for origin in self.allowed_origins.split(",")
             if origin.strip()
         ]
-
 
 settings = Settings()
