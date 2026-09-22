@@ -26,7 +26,7 @@ exclude-newer = "2026-09-22T00:00:00Z"
 [tool.uv]
 add-bounds = "exact"
 exclude-newer = "7 days"
-packages = ["app"]
+
 
 [dependency-groups]
 dev = [
