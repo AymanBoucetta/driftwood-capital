@@ -1,8 +1,8 @@
+import uvicorn
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 from app.config import settings
-import uvicorn
 
 app = FastAPI(title="Driftwood Capital Document Copilot")
 
