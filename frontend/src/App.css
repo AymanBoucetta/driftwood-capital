@@ -1,0 +1,373 @@
+.auth-page,
+.loading-page {
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+  padding: 24px;
+  background: #ffffff;
+}
+
+.auth-panel {
+  width: min(100%, 420px);
+  padding: 0;
+}
+
+.eyebrow {
+  margin: 0 0 14px;
+  color: #6b6b6b;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+}
+
+.auth-panel h1,
+.workspace-header h1,
+.workspace-placeholder h2 {
+  margin: 0;
+  color: #202123;
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+}
+
+.auth-copy,
+.workspace-header p,
+.workspace-placeholder p {
+  color: #6b6b6b;
+}
+
+.auth-copy {
+  margin-top: 12px;
+  font-size: 15px;
+}
+
+.auth-form {
+  display: grid;
+  gap: 16px;
+  margin-top: 30px;
+}
+
+.auth-form label {
+  display: grid;
+  gap: 7px;
+  color: #303030;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.auth-form input {
+  width: 100%;
+  padding: 12px 13px;
+  border: 1px solid #cfcfcf;
+  border-radius: 6px;
+  background: #ffffff;
+  color: #202123;
+  font-size: 15px;
+}
+
+.auth-form input:focus {
+  border-color: #111111;
+  outline: 0;
+  box-shadow: 0 0 0 1px #111111;
+}
+
+.auth-form button,
+.workspace-header button,
+.sidebar-heading button,
+.message-composer button {
+  border: 0;
+  border-radius: 6px;
+  background: #111111;
+  color: #ffffff;
+  font-weight: 600;
+  transition: background 140ms ease, opacity 140ms ease;
+}
+
+.auth-form button {
+  padding: 12px 16px;
+  font-size: 14px;
+}
+
+.auth-form button:hover,
+.workspace-header button:hover,
+.sidebar-heading button:hover,
+.message-composer button:hover {
+  background: #333333;
+}
+
+.auth-form button:disabled,
+.message-composer button:disabled {
+  opacity: 0.45;
+}
+
+.auth-switch {
+  margin-top: 22px;
+  color: #6b6b6b;
+  font-size: 13px;
+}
+
+.link-button {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: #111111;
+  font-size: inherit;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.form-error,
+.form-message {
+  margin: 0;
+  font-size: 13px;
+}
+
+.form-error {
+  color: #b42318;
+}
+
+.form-message {
+  color: #26734d;
+}
+
+.workspace-page {
+  display: grid;
+  grid-template-columns: 260px minmax(0, 1fr);
+  min-height: 100vh;
+  padding: 0;
+  background: #ffffff;
+}
+
+.workspace-header {
+  display: flex;
+  grid-column: 1;
+  grid-row: 1;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 22px 16px 18px;
+  background: #171717;
+  color: #ffffff;
+}
+
+.workspace-header .eyebrow {
+  color: #bdbdbd;
+  font-size: 10px;
+}
+
+.workspace-header h1 {
+  color: #ffffff;
+  font-size: 15px;
+  letter-spacing: 0;
+}
+
+.workspace-header p {
+  margin-top: 7px;
+  color: #989898;
+  font-size: 12px;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+}
+
+.workspace-header > button {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #3f3f3f;
+  background: transparent;
+  color: #e8e8e8;
+  font-size: 13px;
+  font-weight: 500;
+  text-align: left;
+}
+
+.workspace-header > button:hover {
+  background: #2b2b2b;
+}
+
+.chat-layout {
+  display: grid;
+  grid-column: 2;
+  grid-row: 1;
+  grid-template-columns: 220px minmax(0, 1fr);
+  min-width: 0;
+  min-height: 100vh;
+  margin: 0;
+  border: 0;
+  background: #ffffff;
+}
+
+.chat-sidebar {
+  min-width: 0;
+  padding: 22px 12px;
+  border-right: 1px solid #e5e5e5;
+  background: #fafafa;
+}
+
+.chat-panel {
+  display: flex;
+  width: min(100%, 860px);
+  min-width: 0;
+  min-height: 100vh;
+  margin: 0 auto;
+  flex-direction: column;
+  padding: 0 32px;
+}
+
+.message-feed {
+  display: flex;
+  flex: 1;
+  width: min(100%, 740px);
+  margin: 0 auto;
+  flex-direction: column;
+  gap: 28px;
+  padding: 72px 0 140px;
+}
+
+.message {
+  max-width: 82%;
+  padding: 0;
+  border-radius: 0;
+  background: transparent;
+  color: #202123;
+  font-size: 15px;
+  line-height: 1.65;
+}
+
+.message.user {
+  align-self: flex-end;
+  max-width: 78%;
+  padding: 11px 15px;
+  border-radius: 18px;
+  background: #f0f0f0;
+}
+
+.message p {
+  margin: 0;
+}
+
+.message-role {
+  margin-bottom: 5px !important;
+  color: #777777;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.message.user .message-role {
+  color: #5e5e5e;
+}
+
+.message-composer {
+  position: sticky;
+  bottom: 0;
+  display: flex;
+  width: min(100%, 740px);
+  margin: auto auto 24px;
+  gap: 10px;
+  padding: 8px;
+  border: 1px solid #d1d1d1;
+  border-radius: 14px;
+  background: #ffffff;
+  box-shadow: 0 2px 12px rgb(0 0 0 / 7%);
+}
+
+.message-composer input {
+  min-width: 0;
+  flex: 1;
+  padding: 10px 12px;
+  border: 0;
+  background: transparent;
+  color: #202123;
+  font-size: 15px;
+}
+
+.message-composer input:focus {
+  outline: 0;
+}
+
+.message-composer button {
+  min-width: 62px;
+  padding: 9px 12px;
+  font-size: 13px;
+}
+
+.empty-state {
+  align-self: center;
+  margin-top: 25vh;
+  color: #777777;
+  font-size: 14px;
+  text-align: center;
+}
+
+.chat-error {
+  width: min(100%, 740px);
+  margin: 0 auto 12px;
+}
+
+.workspace-placeholder {
+  display: none;
+}
+
+@media (max-width: 720px) {
+  .workspace-page {
+    display: block;
+  }
+
+  .workspace-header {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    display: flex;
+    min-height: auto;
+    flex-direction: row;
+    align-items: center;
+    padding: 14px 16px;
+  }
+
+  .workspace-header > div {
+    min-width: 0;
+  }
+
+  .workspace-header h1 {
+    white-space: nowrap;
+  }
+
+  .workspace-header p {
+    max-width: 190px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .workspace-header > button {
+    width: auto;
+    flex-shrink: 0;
+    padding: 8px 10px;
+    text-align: center;
+  }
+
+  .chat-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .chat-sidebar {
+    display: none;
+  }
+
+  .chat-panel {
+    min-height: calc(100vh - 75px);
+  }
+
+  .chat-panel {
+    width: 100%;
+    padding: 0 16px;
+  }
+
+  .message-feed {
+    padding-top: 40px;
+  }
+}
